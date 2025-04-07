@@ -76,6 +76,13 @@ impl crate::z::Z for rug::Integer {
         Integer::new()
     }
 
+    fn from_digits<T>(digits: &[T], order: Order) -> Self
+    where
+        T: rug::integer::UnsignedPrimitive,
+    {
+        Integer::from_digits(digits, order)
+    }
+
     fn from(n: u64) -> Self {
         <Self as From<u64>>::from(n)
     }

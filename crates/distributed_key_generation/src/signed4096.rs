@@ -80,6 +80,13 @@ impl crate::z::Z for Bignum {
         }
     }
 
+    fn from_digits<T>(digits: &[T], order: rug::integer::Order) -> Self
+    where
+        T: rug::integer::UnsignedPrimitive,
+    {
+        panic!("not impl")
+    }
+
     fn from(n: u64) -> Self {
         Bignum {
             positive: true,

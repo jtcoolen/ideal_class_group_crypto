@@ -32,7 +32,7 @@
 //! use distributed_key_generation::generate_dealing;
 //! use distributed_key_generation::verify_dealing;
 //! use distributed_key_generation::SecurityLevel;
-//! 
+//!
 //! let number_of_participants: usize = 10;
 //! let threshold: usize = 4; // < number_of_participants / 2
 //! let security_level = SecurityLevel::SecLvl112;

@@ -33,6 +33,8 @@ crypto-bigint = {version = "0.6.0-rc.0", default-features = false}
 criterion.workspace = true
 iai-callgrind = "0.14.0"
 clippy = "0.0.302"
+bicycl.workspace = true
+rust-analyzer = "0.0.1"
 
 [dev-dependencies]
 proptest-derive = "0.2.0"

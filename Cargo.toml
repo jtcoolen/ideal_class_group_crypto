@@ -28,7 +28,7 @@ thiserror = "1.0.58"
 
 #class_group = {git="https://github.com/ZenGo-X/class.git"}
 proptest = "1.4.0"
-#classgroup = {git="https://github.com/hsaleemsupra/cgdkg_artifact.git"}
+bicycl = {git="https://github.com/hsaleemsupra/cgdkg_artifact.git"}
 getrandom = "0.2.15"
 ark-bls12-381 = "0.4.0"
 rug = "1.24.1"

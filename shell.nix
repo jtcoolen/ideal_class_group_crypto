@@ -1,9 +1,8 @@
 with import <nixpkgs> { };
-llvmPackages.libcxxStdenv.mkDerivation {
+gccStdenv.mkDerivation {
   name = "env";
-  nativeBuildInputs = [ clang clang-tools ];
+  nativeBuildInputs = [ gcc ];
   buildInputs = [
-    clang
     gmp
     pkg-config
     m4
@@ -20,8 +19,7 @@ llvmPackages.libcxxStdenv.mkDerivation {
     gmp
     gmpxx
     libcxx
-    cargo
-    rustc
+    rustup
     ninja
     valgrind
   ];

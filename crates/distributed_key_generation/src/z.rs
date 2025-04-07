@@ -4,6 +4,7 @@
 
 //! Signed big integer trait.
 
+use rug::integer::{Order, UnsignedPrimitive};
 use std::cmp::Ordering;
 
 #[cfg(feature = "random")]
@@ -26,6 +27,10 @@ pub trait Z {
 
     /// Returns the default value of the integer type, typically zero.
     fn default() -> Self;
+
+    fn from_digits<T>(digits: &[T], order: Order) -> Self
+    where
+        T: UnsignedPrimitive;
 
     fn from(n: u64) -> Self
     where
