@@ -241,10 +241,10 @@ pub fn aggregate_verified_dealings_public<
     pp: &PublicParameters<Z>,
     dealings: &[Dealing<E, S, Z, P>],
 ) -> DKGPublicResult<E> {
-    let master_public_key2 = dealings.iter().fold(E::zero(), |mut acc, d| {
-        acc.add_assign(&d.cmt[0]);
-        acc
-    });
+    // let master_public_key2 = dealings.iter().fold(E::zero(), |mut acc, d| {
+    //     acc.add_assign(&d.cmt[0]);
+    //     acc
+    // });
 
     let mut public_poly = vec![E::zero(); pp.threshold + 1];
     for (_i, d) in dealings.iter().enumerate() {
